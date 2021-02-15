@@ -2,10 +2,10 @@
   "manifest": {
     "publishingInformation": {
       "locales": {
-        "en-CA": {
-          "summary": "Video playing using SDK V2",
+        "en-US": {
+          "summary": "Video Skill demo using SDK V2",
           "name": "display-demo",
-          "description": "Video App Player Skill for Anand Anand"
+          "description": "Video App Player Skill demo"
         }
       }
     },
