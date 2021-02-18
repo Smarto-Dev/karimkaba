@@ -1,7 +1,7 @@
 const Alexa = require('ask-sdk-core');
 
-const HELP_MESSAGE = 'This plays video, . Just open the skill to see the video.';
-const ERROR_MESSAGE = 'Sorry, an error occurred in the skill. Please check the logs.';
+const HELP_MESSAGE = 'This is a simple demo. Just open the skill to see the video.';
+const ERROR_MESSAGE = 'Sorry, an error occurred in the demo. Please check the logs.';
 const STOP_MESSAGE = 'Goodbye!';
 // NOTE: set the video url location below
 
@@ -32,10 +32,10 @@ const LaunchRequestHandler = {
     if (supportsVideo(handlerInput)) {
       handlerInput.responseBuilder.addVideoAppLaunchDirective(videoUrl, 'Video Sample Title', 'Video Subtitle');
 
-      return handlerInput.responseBuilder.speak('Here\'s your video, . Enjoy!').getResponse();
+      return handlerInput.responseBuilder.speak('Here\'s your video. Enjoy!').getResponse();
     }
     return handlerInput.responseBuilder
-      .speak('This skill includes a video, . Please use a device which supports video, for example, the Echo Show.')
+      .speak('This demo includes a video. Please use a device which supports video, for example, the Echo Show.')
       .getResponse();
   },
 };
